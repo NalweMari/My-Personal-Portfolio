@@ -1,0 +1,296 @@
+
+ :root {
+                --primary-color: #344459;     
+            --secondary-color: #586973;   
+            --accent-1: #F2681D;          
+            --accent-2: #F2561D;          
+            --accent-3: #A63D33;          
+            --text-color: #f8f9fa;
+            --dark-bg:#333333 ;
+         }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            b
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 10px 0 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Orange Navbar */
+        .navbar-dark {
+            background-color: var(--primary-color); 
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            color: var(--accent-1) !important;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .navbar-dark .navbar-brand {
+            color: var(--accent-1) !important;
+            font-weight: 700;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-1);
+            transition: width 0.3s ease;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: var(--accent-2) !important;
+        }
+        
+        /* Profile Image */
+        .profile-image {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* Buttons */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--accent-2), var(--accent-3));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-outline-primary {
+            border-color: var(--accent-1);
+            color: var(--accent-1);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--accent-1);
+            border-color: var(--accent-1);
+            color: white;
+        }
+        
+        /* Skill Bars */
+        .skill-bar {
+            height: 12px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+            transition: width 1s ease-in-out;
+        }
+        
+        /* Cards */
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        /* Section Titles */
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+            border-radius: 2px;
+        }
+        
+        .text-center .section-title:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Logo */
+        .logo-icon {
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: white;
+        }
+        
+        /* Contact Icons */
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+        
+        /* Social Icons */
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background: linear-gradient(135deg, var(--accent-2), var(--accent-3));
+            transform: translateY(-3px);
+        }
+        
+        /* Badges */
+        .badge-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .badge-secondary {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .badge-accent {
+            background-color: var(--accent-1);
+            color: white;
+        }
+        
+        /* Card Headers */
+        .card-header-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .card-header-accent {
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            color: white;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-1), var(--accent-2));
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent-1);
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--accent-1);
+        }
+        
+        /* Skill Categories */
+        .skill-category {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        
+        .skill-category h5 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-1);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);}
+
+
+
+
+
+
+
+
+
+
+
+
+

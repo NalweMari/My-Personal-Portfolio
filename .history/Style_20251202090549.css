@@ -1,0 +1,69 @@
+/* .bg-custom {
+  background-color: rgba(7, 0, 34, 0.459);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(218, 86, 10);
+}
+.hero-section {
+  background-color: rgba(13, 3, 99, 0.24);
+  color:  rgb(218, 86, 10);
+ /* padding: 10px 0; */
+
+ :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #34a4dc;
+            --accent-color: #ff6b6b;
+            --text-color:  b ;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color:  rgb(218, 86, 10);
+            padding: 10px 0 10px;
+            position: relative;
+            overflow: hidden;
+        }
+.profile-image {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.89);
+    /* width: 400px;
+    height: 400px;
+    object-fit: cover; */
+}
+
+ .skill-bar {
+            height: 12px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+ .skill-bar {
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.skill-progress {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #0d6efd;
+}
+.project-card {
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+} 

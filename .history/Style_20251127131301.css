@@ -1,0 +1,26 @@
+.bg-custom {
+
+}
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), beige),
+    url("https://via.placeholder.com/1500") center/cover no-repeat;
+  color: white;
+  padding: 150px 0;
+}
+.skill-bar {
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.skill-progress {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #0d6efd;
+}
+.project-card {
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
